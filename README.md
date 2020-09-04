@@ -7,7 +7,7 @@ Robert Muller - Boston College
 ---
 
 ## Lecture Notes
-## Week 1
+## Week 1 DRAFT
 
 **This Week:**
 
@@ -711,9 +711,9 @@ Random.int 2;;
 
 Note that the same function name (e.g., length) can be defined in more than one library module.
 
-##### Pervasives
+##### Pervasively Available Definitions
 
-The definitions in OCaml's [Pervasives](https://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html) module are imported automatically. The symbols **min_int**, **max_int**, **infinity**, the type conversion functions, all of the built-in operators and many more symbols are defined in the Pervasives module.
+OCaml's Standard Library has a set of definitions that are used so pervasively that they are made available automatically. The symbols **min_int**, **max_int**, **infinity**, the type conversion functions, all of the built-in operators and many more symbols are defined in the Pervasives module.
 
 ```ocaml
 # abs(-3);;
