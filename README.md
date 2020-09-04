@@ -713,7 +713,7 @@ Note that the same function name (e.g., length) can be defined in more than one 
 
 ##### Pervasively Available Definitions
 
-OCaml's Standard Library has a set of definitions that are used so pervasively that they are made available automatically. The symbols **min_int**, **max_int**, **infinity**, the type conversion functions, all of the built-in operators and many more symbols are defined in the Pervasives module.
+OCaml's Standard Library has a set of definitions that are used so pervasively that they are made available automatically. The symbols **min_int**, **max_int**, **infinity**, the type conversion functions, all of the built-in operators and many more symbols are defined in the Standard Library.
 
 ```ocaml
 # abs(-3);;
