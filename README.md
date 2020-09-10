@@ -744,3 +744,12 @@ OCaml's Standard Library has a set of definitions that are used so pervasively t
 - : float = 3.
 ```
 
+**The Lib, Animate, Image and Color Modules**
+
+As part of the setup for the course, we've installed a number of modules customized for the course. You can find documentation for these libraries on the course homepage. The `Lib` module has a number of handy definitions. We'll cover them later. For example, example, OCaml doesn't come with a pre-defined symbol for *pi*. But you can find one in the `Lib` module:
+
+```ocaml
+# Lib.pi;;
+- : float = 3.14159265358979312
+```
+
