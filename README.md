@@ -7,7 +7,7 @@ Robert Muller - Boston College
 ---
 
 ## Lecture Notes
-## Week 1 DRAFT
+## Week
 
 **This Week:**
 
@@ -55,7 +55,7 @@ Robert Muller - Boston College
 **Four Aspects of Computation**
 
 1. **Simplification** & the **Work** it requires
-2. **Abstraction** and **Composition**
+2. **Abstraction** & **Composition**
 
 #### 1. Expression Simplification & the Work it requires
 
@@ -256,17 +256,25 @@ volume (1.0 +. 1.0) 3.0 ->
 
 **Lab Schedule**
 
-2. Working with the Unix command shell
-3. Working with git, GitHub & markdown
-4. Working with lists
-5. Working with the graphics library
-6. Functions are values
-7. Working with dictionaries
-8. Numeral systems
-9. SVM
-10. Imperative coding: for-loops & arrays
-11. Working with strings & and text files
-12. Making new types
+1. System Setup
+
+2. Working with Unix
+3. Working with git & GitHub
+4. The Animate Graphics Library
+
+5. Working with Lists
+
+6. Working with Trees
+7. The Model-View-Update Pattern
+
+8. Numeral systems & Storage
+
+9. A Simple Virtual Machine
+
+10. Working with Digital Audio
+
+11. Working with Digital Images
+12. Working with Text Files
 
 ---
 
@@ -356,7 +364,7 @@ Grades are calculated on a 200 point scale.
 
 ### 3. Coding Logistics
 
-In this course we'll be using the Unix operating system and the Unix command shell to develop, manage and execute OCaml code. We'll provide you with a virtual machine (VM) running Unix on your computer. The details are spelled out in problem set 1. We'll be using git and GitHub to manage the distribution and submission of problem sets and related materials. We'll be using an animation library graphics & animation in OCaml.
+In this course we'll be using the Unix operating system and the Unix command shell to develop, manage and execute OCaml code. The details are spelled out in problem set 1. We'll be using git and GitHub to manage the distribution and submission of problem sets and related materials. We'll be using an animation library for graphics & animation in OCaml.
 
 A *program* is a specially structured piece of text that expresses a computational process to be carried out by a computer. The particulars of the structure of the text depend on the programming language. Programs are usually written with a text editor. In this course, we'll be using the [Atom](https://atom.io/) text editor to write programs in the OCaml dialect of the ML programming language. Atom is available for free, complements of GitHub.
 
@@ -417,25 +425,38 @@ Since OCaml is a typed programming language, step 3 of its REPL also prints the 
 
 The hash symbol `#` is OCaml's prompt and the trailing pair of semicolons `;;` is the user's signal to OCaml that the text of the expression is complete and ready for evaluation.
 
-**Using the OCaml Compiler**
 
-In this course, we'll use both the OCaml compiler, **ocamlc** and the REPL **ocaml**. Both can be invoked directly from the Unix command line. To compile an ocaml source file *myfile.ml*, one could type:
+
+**The Dune Build Manager**
+
+In this course, we'll usually compile OCaml code using the `dune` build manager. For simple programs, for example, those that don't use the `Animate` library, we'll be able to evaluate or code in a REPL. The OCaml REPL, `ocaml`, can be run either directly from a Unix command shell, or it can be run as a subprocess of the Atom editor (by typing `ctrl-y` and then `ctrl-o`). 
+
+**Running Code with Dune**
+
+A typical scenario would be to have your code in a directory such as `ps1-dogfishbar`.
 
 ```bash
-> ocamlc -o go myfile.ml
+> pwd
+/Users/muller/csci1103/ps1-dogfishbar/
+> ls
+README.md img/ src/
 ```
 
-Then the program can be executed in a separate step with something like
+The harness code for each project will be contained in the `src` directory.
 
 ```bash
-> ./go
+> cd src
+> tree
+├── bin
+│   ├── dune
+│   └── main.ml
+└── dune-project
 ```
 
-Since we'll often be using custom libraries, the compilation process will usually be configured by a **Makefile** and the Unix *make* command:
+Then the program can be compiled and executed by typing
 
 ```bash
-> make
-> ./go
+> dune exec bin/main.exe
 ```
 
 **Using the OCaml REPL**
