@@ -289,11 +289,11 @@ volume (1.0 +. 1.0) 3.0 ->
 
 **Teaching Assistant Staff**
 
-All Lab meetings on zoom.
+Lab meets Wednesday at 3PM in 245 Beacon St. Rm. 103
 
-- Gavin Bloom, Head Teaching Assistant — Section 01: Tuesdays 5PM
-- Emma Sabbadini — Section 02; Tuesdays 6PM
-- Callie Sardina — Section 03: Wednesdays 5PM
+- Liam Murphy, Head Teaching Assistant
+- Nicole Lockwood
+
 
 ---
 
