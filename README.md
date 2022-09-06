@@ -7,7 +7,7 @@ Robert Muller - Boston College
 ---
 
 ## Lecture Notes
-## Week
+## Week 1
 
 **This Week:**
 
